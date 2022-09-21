@@ -16,13 +16,13 @@ function btnClic() {
   document.getElementById("opAB").innerHTML = dist(aX, aY, bX, bY);
   document.getElementById("opAC").innerHTML = dist(bX, bY, cX, cY);
   document.getElementById("opBC").innerHTML = dist(cX, cY, aX, aY);
-  document.getElementById("opFin").innerHTML = dist(aB + aC + bC);
+  //document.getElementById("opFin").innerHTML = dist();
 
   function dist(x1, y1, x2, y2) {
-    //aB = y2 - y1 / x2 - x1;
-    //aC = y2 - y1 / x2 - x1;
-    //bC = y2 - y1 / x2 - x1;
-    //periM = aB + aC + bC;
-    //return periM;
+    aB = x2 - x1 + y2 - y1;
+    bC = x2 - x1 + y2 - y1;
+    aC = x2 - x1 + y2 - y1;
+    //priM = (aB + aC + bC) / 2;
+    //return priM;
   }
 }
