@@ -11,18 +11,14 @@ function btnClic() {
   let aY = +document.getElementById("vertyA").value;
   let bY = +document.getElementById("vertyB").value;
   let cY = +document.getElementById("vertyC").value;
+  
 
   // Calculate the triangle
   document.getElementById("opAB").innerHTML = dist(aX, aY, bX, bY);
   document.getElementById("opAC").innerHTML = dist(bX, bY, cX, cY);
   document.getElementById("opBC").innerHTML = dist(cX, cY, aX, aY);
-  //document.getElementById("opFin").innerHTML = dist();
 
   function dist(x1, y1, x2, y2) {
-    aB = x2 - x1 + y2 - y1;
-    bC = x2 - x1 + y2 - y1;
-    aC = x2 - x1 + y2 - y1;
-    //priM = (aB + aC + bC) / 2;
-    //return priM;
+    return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
   }
 }
