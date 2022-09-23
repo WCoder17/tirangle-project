@@ -14,9 +14,9 @@ function btnClic() {
   
 
   // Calculate the triangle
-  document.getElementById("opAB").innerHTML = dist(aX, aY, bX, bY);
-  document.getElementById("opAC").innerHTML = dist(bX, bY, cX, cY);
-  document.getElementById("opBC").innerHTML = dist(cX, cY, aX, aY);
+  let aB = document.getElementById("opAB").innerHTML = dist(aX, aY, bX, bY);
+  let bC = document.getElementById("opBC").innerHTML = dist(bX, bY, cX, cY);
+  let aC = document.getElementById("opAC").innerHTML = dist(cX, cY, aX, aY);
 
   function dist(x1, y1, x2, y2) {
     return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
